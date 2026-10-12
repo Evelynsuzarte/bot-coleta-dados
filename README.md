@@ -1,1 +1,0 @@
-# bot-coleta-dados
