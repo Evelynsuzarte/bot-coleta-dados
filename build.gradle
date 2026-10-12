@@ -1,0 +1,24 @@
+plugins {
+    id 'groovy'
+}
+
+group = 'org.example'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    //implementation 'org.apache.groovy:groovy:6.0.0'
+    implementation 'org.apache.groovy:groovy-all:4.0.24'
+    testImplementation platform('org.junit:junit-bom:6.0.0')
+    testImplementation 'org.junit.jupiter:junit-jupiter'
+    testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+    implementation 'org.jsoup:jsoup:1.18.1'
+
+}
+
+test {
+    useJUnitPlatform()
+}
